@@ -1,0 +1,27 @@
+how to set unbound fields,,
+
+- Drag & drop data type from 'unbound fields' to details (section 10)
+ex: 
+for recordset field 'ID' select 'Number'
+for recordset field 'code' select 'String'
+for recordset field 'date' select 'Date'
+
+-rename field object to recordset fields
+ex:
+change name of '@unboundnumber1' to ID
+change name of '@unboundstring1' to Date
+etc..
+
+-In the report form set report datasource,
+
+open recordset - rs
+set datasource - Report.Database.SetDataSource rs, 3, 1
+autobind - Report.AutoSetUnboundFieldSource crBMTName
+
+
+mur..
+
+
+
+
+
